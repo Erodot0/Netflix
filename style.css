@@ -26,7 +26,183 @@ button {
     background: none;
 }
 
+/* HEADER */
 
+main {
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, .8);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, .4) 60%, rgba(0, 0, 0, .8) 100%), url(assets/sfondo\ netflix.jpg);
+    border-bottom: 8px solid #222222;
+    background-size: cover;
+    object-fit: cover;
+}
+
+header {
+    margin: auto;
+    padding-top: 20px;
+    max-width: 1810px;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.card-head {
+    overflow: auto;
+    margin: 0px 56px;
+    padding-top: 8px;
+}
+
+/* logo netflix */
+
+.net-logo {
+    max-width: 167px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+/* navbar */
+
+.nav {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+/* select lingua */
+
+.lang {
+    width: fit-content;
+    position: relative;
+}
+
+.select-lang {
+    /* dimensioni */
+    padding: 8px 22px;
+    width: auto;
+    height: 36.2px;
+    /* font */
+    font-size: 14px;
+    /* border */
+    border: solid 1px #aaa;
+    border-radius: 2px;
+    /* style */
+    background-color: rgba(0, 0, 0, 4);
+    color: white;
+    appearance: none;
+    
+}
+
+/* select options */
+
+.opt-main {
+    background-color: #aaa;
+    color: white;
+}
+
+
+/* icone select lingua */
+
+.fa-globe {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    color: white;
+    font-size: small;
+}
+
+.fa-caret-down {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    color: white;
+}
+
+/* bottone accedi */
+
+.link-btn {
+    /* display */
+    display: block;
+    /* box */
+    margin-left: 30px;
+    padding: 7px 17px;
+    height: 20px;
+    /* border */
+    border-radius: 3px;
+    /* font */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    /* style */
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width:570px) {
+    
+    .card-head {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 20px;
+    }
+    
+    
+    .net-logo {
+        max-width: 108px;
+        width: auto;
+        height: 100%;
+        margin-right: 10px;
+    }
+    
+    
+    .select-lang {
+        height: 29px;
+        padding: 5px 22px;
+        font-size: small;
+        outline: none
+    }
+    
+    .fa-globe {
+        top: 8px;
+        left: 8px;
+    }
+    
+    .fa-caret-down {
+        top: 6px;
+        right: 8px;
+    }
+    
+    .link-btn {
+        width: auto;
+        height: 16px;
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    .net-logo {
+        height: auto;
+        max-width: 88px;
+        width: 100%;
+        margin-right: auto;
+    }
+    
+    .link-btn {
+        max-width: 61px;
+        width: auto;
+        font-size: .9rem;
+        padding: .4rem .5rem;
+    }
+}
+
+/* FINE HEADER */
 
 
 /* NON TOCCARE */
