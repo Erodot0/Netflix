@@ -26,6 +26,7 @@ button {
     background: none;
 }
 
+
 /* HEADER */
 
 main {
@@ -202,8 +203,300 @@ header {
     }
 }
 
-/* FINE HEADER */
+/* FINE HEADER *
 
+
+/* MAIN */
+
+.main-flex {
+    padding: 70px 45px;
+}
+
+.div-main {
+    /* border: solid orange; */
+    margin: 0 auto;
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+    padding: 75px 0px;
+    z-index: 1;
+}
+
+.main-text {
+    color: white;
+    text-align: center;
+}
+
+.main-text h1 {
+    display: inline;
+    /* dimensioni */
+    max-width: 640px;
+    margin: 0px auto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    word-spacing: 0px;
+    width: 800px;
+    max-width: 800px;
+}
+
+.main-text h2 {
+    /* dimensioni */
+    max-width: 800px;
+    font-size: 26px;
+    margin: 16px 75px;
+    width: auto;
+    height: auto;
+    font-weight: 400;
+    
+    
+}
+
+/* form EMAIL */
+
+.form-email {
+    /* border: solid green; */
+    text-align: center;
+    height: 124px;
+    width: 100%;
+    height: auto;
+    max-width: 950px;
+    padding-top: 14px;
+}
+
+.form-email h3 {
+    color: white;
+    /* dimensioni */
+    padding: 0px 46px 20px 46px;
+    margin: 0px 12px;
+    min-height: auto;
+    min-width: auto;
+    /* font */
+    font-weight: 400;
+    font-size: 19.2px;
+}
+
+/* input + bottone */
+
+.email-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* solo input */
+
+.input-mail {
+    position: relative;
+}
+
+#email {
+    height: 60px;
+    width: 500px;
+    min-width: 450px;
+    border: 1px solid #8c8c8c;
+    padding: 10px 10px 0px 10px;
+    cursor: text;
+    display: block;
+    border-radius: 2px 0px 0px 2px;
+}
+
+#email:focus-within {
+    outline: none;
+    border: 1px solid #0071eb; 
+}
+
+.email-label {
+    font-size: 17px;
+    color: darkgray;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 25px;
+    bottom: 10px;
+    left: 10px;
+    cursor: text;
+}
+
+.input-mail:focus-within label {
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+/* Bottone rosso */
+
+.red-button {
+    height: 72px;
+    min-width: 74px;
+    width: 160px;
+    padding: 0 26px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #e50914;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 2px 2px 0px;
+    box-sizing: border-box;
+}
+
+.red-button:hover {
+    background-color: #f40612;
+}
+
+.red-button:active {
+    background-color: #bb0a12;
+    border: 3px solid #761717;
+}
+
+.red-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    
+}
+
+.red-button button {
+    background: none;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.fa-angle-right {
+    height: 19.5px;
+    width: 9.75px;
+    margin-top: 1px;
+    font-size: 22px;
+}
+
+/* media query */
+
+/* Media query tablet */
+
+@media screen and (max-width:768px) {
+    
+    .main-text h1 {
+        font-size: 50px;
+    }
+    
+    .main-text h2 {
+        font-size: 26px;
+        width: 100%;
+        margin: 16px auto;
+    }
+    
+    .form-email h3 {
+        font-size: 23px;
+        text-align: center;
+    }
+    
+    .email-section {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    #email {
+        max-width: 500px;
+        width: auto;
+        height: 45px;
+    }
+    
+    .email-label {
+        top: 20px;
+    }
+    
+    .red-button {
+        margin: 10px 0;
+        padding: 0 16px;
+        max-width: 84px;
+        width: auto;
+        height: 40px;
+    }
+    
+    .red-button a {
+        font-size: 16px;
+        padding: 5.6px 0;
+        text-align: center;
+    }
+    
+    .red-button i {
+        font-size: 16px;
+    }
+    
+    /* media query mobile (375px) */
+    
+    @media screen and (max-width:376px) {
+        
+        .main-flex {
+            padding: 50px 10px;
+        }
+        
+        .div-main {
+            padding: 15px 0;
+        }
+        
+        .main-text h1 {
+            font-size: 28px;
+            line-height: normal;
+        }
+        
+        .main-text h2 {
+            font-size: 18px;
+        }
+        
+        .form-email h3 {
+            padding: 0 5%;
+            margin: 0%;
+            font-size: 18px;
+        }
+        
+        .email-section {
+            margin: 10px auto;
+            width: auto;
+        }
+        
+        .input-mail {
+            width: 100%;
+        }
+        
+        .input-mail #email {
+            min-width: 100px;
+            max-width: 333px;
+            width: 100%;
+            height: 38px;
+            margin: auto;
+        }
+        
+        .email-label {
+            font-size: 14px;
+            top: 17px;
+        }
+        
+        .input-mail:focus-within label {
+            height: 20px;
+            position: absolute;
+            top: 5px;
+            bottom: 10px;
+            left: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            transition: 0.1s;
+        }
+    }
+}
+
+
+/* FINE MAIN */
 
 /* NON TOCCARE */
 
