@@ -26,6 +26,7 @@ button {
     background: none;
 }
 
+
 /* HEADER */
 
 main {
@@ -377,8 +378,6 @@ header {
 }
 
 /* media query */
-
-/* Media query tablet */
 
 @media screen and (max-width:768px) {
     
@@ -744,9 +743,142 @@ header {
     }
 }
 
-
  /* FINE CARDS */
 
+/* FAQ */
+
+
+ .faq {
+    font-weight: 400;
+    font-size: 1.625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq h1 {
+    font-size: 3.125rem;
+    margin: 0 0 8px 0;
+}
+
+.faq-list {
+    padding: 0;
+    margin: 52px auto;
+    max-width: 815px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.qn-answer {
+    margin: 0 0 8px 0;
+}
+
+.qn {
+    padding: 28px 57.2px 28px 31.2px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #303030;
+    position: relative;
+    max-width: 815px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.fa-plus {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+}
+
+.answer {
+    border-top: 1px black solid;
+    max-width: 815px;
+    text-align: left;
+    font-size: 26px;
+    padding: 31px;
+    background-color: #303030;
+}
+
+/* media query */
+
+@media screen and (max-width:768px) {
+
+    .faq h1 {
+        font-size: 40px;
+    }
+
+    .faq-list {
+        margin: 30px 34px;
+        display: flex;
+        width: auto;
+    }
+
+    .qn {
+        padding: 16px 44px 16px 24px;
+        width: 540px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .answer {
+        font-size: 20px;
+    }
+
+    .fa-plus {
+        position: absolute;
+        top: 16px;
+        right: 25px;
+        font-size: 25px;
+    }
+
+    /* mobile */
+
+    @media screen and (max-width:375px) {
+
+        .faq h1 {
+            font-size: 26px;
+        }
+        
+        .no-padd {
+            padding: 70px 0;
+        }
+
+        .faq-list {
+            width: 100%;
+            margin: 30px 0;
+        }
+    
+        .qn {
+            font-size: 18px;
+            width: auto;
+            padding-top: 23px;
+        }
+    
+        .answer {
+            font-size: 18px;
+        }
+    
+        .fa-plus {
+            top: 20px;
+        }
+
+        .move-label {
+            left: 20px;
+        }
+
+        .input-mail:focus-within .move-label {
+            left: 20px;
+        }
+    }
+}
+
+ /* FINE FAQ */
+ 
 /* NON TOCCARE */
 
 @media screen and (max-width: 768px) {
