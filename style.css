@@ -1,0 +1,74 @@
+/* GENERALI HEADER */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+summary::marker {
+    content: "";
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+ /* HEADER */
+
+ /* sostituire HEADER con questo commento */
+
+ /* FINE HEADER */
+
+ /* MAIN */
+
+ /* sostituire MAIN con questo commento */
+
+ /* FINE MAIN */
+ 
+ /* CARDS */
+
+ /* sostituire CARDS con questo commento */
+
+ /* FINE CARDS */
+
+ /* FAQ */
+
+ /* sostituire FAQ con questo commento */
+
+ /* FINE FAQ */
+
+ /* FOOTER */
+
+ /* sostituire FOOTER con questo commento */
+
+ /* FINE FOOTER */
+
+
+ /* NON TOCCARE */
+
+ @media screen and (max-width: 768px) {
+    .contenuto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* FINE */
