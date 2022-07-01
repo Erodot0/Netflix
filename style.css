@@ -26,7 +26,726 @@ button {
     background: none;
 }
 
- /* FAQ */
+
+/* HEADER */
+
+main {
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, .8);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, .4) 60%, rgba(0, 0, 0, .8) 100%), url(assets/sfondo\ netflix.jpg);
+    border-bottom: 8px solid #222222;
+    background-size: cover;
+    object-fit: cover;
+}
+
+header {
+    margin: auto;
+    padding-top: 20px;
+    max-width: 1810px;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.card-head {
+    overflow: auto;
+    margin: 0px 56px;
+    padding-top: 8px;
+}
+
+/* logo netflix */
+
+.net-logo {
+    max-width: 167px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+/* navbar */
+
+.nav {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+/* select lingua */
+
+.lang {
+    width: fit-content;
+    position: relative;
+}
+
+.select-lang {
+    /* dimensioni */
+    padding: 8px 22px;
+    width: auto;
+    height: 36.2px;
+    /* font */
+    font-size: 14px;
+    /* border */
+    border: solid 1px #aaa;
+    border-radius: 2px;
+    /* style */
+    background-color: rgba(0, 0, 0, 4);
+    color: white;
+    appearance: none;
+    
+}
+
+/* select options */
+
+.opt-main {
+    background-color: #aaa;
+    color: white;
+}
+
+
+/* icone select lingua */
+
+.fa-globe {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    color: white;
+    font-size: small;
+}
+
+.fa-caret-down {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    color: white;
+}
+
+/* bottone accedi */
+
+.link-btn {
+    /* display */
+    display: block;
+    /* box */
+    margin-left: 30px;
+    padding: 7px 17px;
+    height: 20px;
+    /* border */
+    border-radius: 3px;
+    /* font */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    /* style */
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width:570px) {
+    
+    .card-head {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 20px;
+    }
+    
+    
+    .net-logo {
+        max-width: 108px;
+        width: auto;
+        height: 100%;
+        margin-right: 10px;
+    }
+    
+    
+    .select-lang {
+        height: 29px;
+        padding: 5px 22px;
+        font-size: small;
+        outline: none
+    }
+    
+    .fa-globe {
+        top: 8px;
+        left: 8px;
+    }
+    
+    .fa-caret-down {
+        top: 6px;
+        right: 8px;
+    }
+    
+    .link-btn {
+        width: auto;
+        height: 16px;
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    .net-logo {
+        height: auto;
+        max-width: 88px;
+        width: 100%;
+        margin-right: auto;
+    }
+    
+    .link-btn {
+        max-width: 61px;
+        width: auto;
+        font-size: .9rem;
+        padding: .4rem .5rem;
+    }
+}
+
+/* FINE HEADER *
+
+/* MAIN */
+
+.main-flex {
+    padding: 70px 45px;
+}
+
+.div-main {
+    /* border: solid orange; */
+    margin: 0 auto;
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+    padding: 75px 0px;
+    z-index: 1;
+}
+
+.main-text {
+    color: white;
+    text-align: center;
+}
+
+.main-text h1 {
+    display: inline;
+    /* dimensioni */
+    max-width: 640px;
+    margin: 0px auto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    word-spacing: 0px;
+    width: 800px;
+    max-width: 800px;
+}
+
+.main-text h2 {
+    /* dimensioni */
+    max-width: 800px;
+    font-size: 26px;
+    margin: 16px 75px;
+    width: auto;
+    height: auto;
+    font-weight: 400;
+    
+    
+}
+
+/* form EMAIL */
+
+.form-email {
+    /* border: solid green; */
+    text-align: center;
+    height: 124px;
+    width: 100%;
+    height: auto;
+    max-width: 950px;
+    padding-top: 14px;
+}
+
+.form-email h3 {
+    color: white;
+    /* dimensioni */
+    padding: 0px 46px 20px 46px;
+    margin: 0px 12px;
+    min-height: auto;
+    min-width: auto;
+    /* font */
+    font-weight: 400;
+    font-size: 19.2px;
+}
+
+/* input + bottone */
+
+.email-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* solo input */
+
+.input-mail {
+    position: relative;
+}
+
+#email {
+    height: 60px;
+    width: 500px;
+    min-width: 450px;
+    border: 1px solid #8c8c8c;
+    padding: 10px 10px 0px 10px;
+    cursor: text;
+    display: block;
+    border-radius: 2px 0px 0px 2px;
+}
+
+#email:focus-within {
+    outline: none;
+    border: 1px solid #0071eb; 
+}
+
+.email-label {
+    font-size: 17px;
+    color: darkgray;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 25px;
+    bottom: 10px;
+    left: 10px;
+    cursor: text;
+}
+
+.input-mail:focus-within label {
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+/* Bottone rosso */
+
+.red-button {
+    height: 72px;
+    min-width: 74px;
+    width: 160px;
+    padding: 0 26px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #e50914;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 2px 2px 0px;
+    box-sizing: border-box;
+}
+
+.red-button:hover {
+    background-color: #f40612;
+}
+
+.red-button:active {
+    background-color: #bb0a12;
+    border: 3px solid #761717;
+}
+
+.red-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    
+}
+
+.red-button button {
+    background: none;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.fa-angle-right {
+    height: 19.5px;
+    width: 9.75px;
+    margin-top: 1px;
+    font-size: 22px;
+}
+
+/* media query */
+
+@media screen and (max-width:768px) {
+    
+    .main-text h1 {
+        font-size: 50px;
+    }
+    
+    .main-text h2 {
+        font-size: 26px;
+        width: 100%;
+        margin: 16px auto;
+    }
+    
+    .form-email h3 {
+        font-size: 23px;
+        text-align: center;
+    }
+    
+    .email-section {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    #email {
+        max-width: 500px;
+        width: auto;
+        height: 45px;
+    }
+    
+    .email-label {
+        top: 20px;
+    }
+    
+    .red-button {
+        margin: 10px 0;
+        padding: 0 16px;
+        max-width: 84px;
+        width: auto;
+        height: 40px;
+    }
+    
+    .red-button a {
+        font-size: 16px;
+        padding: 5.6px 0;
+        text-align: center;
+    }
+    
+    .red-button i {
+        font-size: 16px;
+    }
+    
+    /* media query mobile (375px) */
+    
+    @media screen and (max-width:376px) {
+        
+        .main-flex {
+            padding: 50px 10px;
+        }
+        
+        .div-main {
+            padding: 15px 0;
+        }
+        
+        .main-text h1 {
+            font-size: 28px;
+            line-height: normal;
+        }
+        
+        .main-text h2 {
+            font-size: 18px;
+        }
+        
+        .form-email h3 {
+            padding: 0 5%;
+            margin: 0%;
+            font-size: 18px;
+        }
+        
+        .email-section {
+            margin: 10px auto;
+            width: auto;
+        }
+        
+        .input-mail {
+            width: 100%;
+        }
+        
+        .input-mail #email {
+            min-width: 100px;
+            max-width: 333px;
+            width: 100%;
+            height: 38px;
+            margin: auto;
+        }
+        
+        .email-label {
+            font-size: 14px;
+            top: 17px;
+        }
+        
+        .input-mail:focus-within label {
+            height: 20px;
+            position: absolute;
+            top: 5px;
+            bottom: 10px;
+            left: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            transition: 0.1s;
+        }
+    }
+}
+
+
+/* FINE MAIN */
+
+/* CARDS */
+
+
+ .section {
+    color: white;
+    /* dimensioni */
+    padding: 70px 45px;
+    border-bottom: solid 8px #222222;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.contenuto {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0;
+}
+
+/* Testo */
+
+.testo {
+    padding: 0 48px 0 0;
+    margin: 0;
+    width: 52%;
+}
+
+.padd-left {
+    padding: 0 0 0 48px;
+}
+
+.testo>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 8px;
+    max-height: 110px;
+}
+
+.testo>h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 19.5px 0 6.5px 0;
+}
+
+/* immagine */
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 48%;
+    padding: 0;
+    position: relative;
+}
+
+.tv,
+.imac {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* Card video */
+
+.tv-anima {
+    width: 384px;
+    transform: translate(-2px, -7px);
+    margin: 85px;
+}
+
+.mobile-download {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background-color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+    margin: 0 auto;
+    min-width: 15em;
+    width: 300px;
+    padding: 8px 12px;
+    height: 84px;
+    justify-content: space-between;
+    top: 250px;
+}
+
+.st-image {
+    width: auto;
+    height: 80px;
+}
+
+.st-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    height: 20px;
+}
+
+.download-text {
+    font-size: 14.4px;
+    color: #0071eb;
+    height: 19px;
+}
+
+.download-gif {
+    width: 48px;
+    height: auto;
+}
+
+.mobile-text {
+    margin: 15px;
+    flex: 1;
+    text-align: left;
+}
+
+.imac-anima {
+    width: 315px;
+    transform: translateY(-60px);
+    margin: 100px;
+}
+
+/* Media query */
+
+@media screen and (max-width:768px) {
+
+    .section {
+        text-align: center;
+    }
+
+    .testo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .order1 {
+        order: -1;
+    }
+
+    .testo h1 {
+        font-size: 40px;
+    }
+
+    .testo h2 {
+        margin: 15px 0 5px;
+        font-size: 20px;
+    }
+
+    .tv,
+    .tel,
+    .imac,
+    .kids {
+        width: 600px;
+    }
+
+    .tv-anima {
+        transform: translateY(-26px);
+        width: 440px;
+        margin: 15px 0 200px;
+    }
+
+    .mobile-download {
+        width: 358px;
+        transform: translateY(70px);
+        text-align: left;
+    }
+
+    .imac-anima {
+        transform: translateY(-180px);
+        margin-bottom: 180px;
+        width: 380px;
+    }
+
+    /* Mobile media query */
+
+    @media screen and (max-width:375px) {
+
+        .section {
+            padding: 70px 25px;
+        }
+
+        .testo h1 {
+            font-size: 26px;
+        }
+
+        .testo h2 {
+            margin: 13.5px 0 4.5px;
+            font-size: 18px;
+        }
+
+        .tv,
+        .tel,
+        .imac,
+        .kids {
+            width: 337.7px;
+        }
+
+        .tv-anima {
+            transform: translateY(-20px);
+            width: 250px;
+            margin: 15px 0 80px;
+        }
+
+        .mobile-download {
+            width: 235px;
+            height: 44px;
+            transform: translateY(-70px);
+            text-align: left;
+        }
+
+        /* img stranger things */
+
+        .st-image {
+            width: 34.28px;
+            height: 48px;
+        }
+
+        .st-text {
+            font-size: 14.4px;
+        }
+
+        .download-text {
+            font-size: 12px;
+        }
+
+        /* fine */
+
+        .imac-anima {
+            transform: translateY(-40px);
+            margin: 70px 50px;
+            width: 205px;
+            height: auto;
+        }
+
+        .order1 {
+            padding: 0;
+        }
+
+        .line-height h1 {
+            line-height: normal;
+        }
+    }
+}
+
+ /* FINE CARDS */
+
+/* FAQ */
 
 
  .faq {
@@ -158,17 +877,16 @@ button {
     }
 }
 
-
  /* FINE FAQ */
+ 
+/* NON TOCCARE */
 
- /* NON TOCCARE */
-
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contenuto {
         display: flex;
         flex-direction: column;
     }
-
+    
     .email-section {
         display: flex;
         flex-direction: column;
