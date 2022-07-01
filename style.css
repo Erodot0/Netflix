@@ -40,7 +40,252 @@ button {
  
  /* CARDS */
 
- /* sostituire CARDS con questo commento */
+
+ .section {
+    color: white;
+    /* dimensioni */
+    padding: 70px 45px;
+    border-bottom: solid 8px #222222;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.contenuto {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0;
+}
+
+/* Testo */
+
+.testo {
+    padding: 0 48px 0 0;
+    margin: 0;
+    width: 52%;
+}
+
+.padd-left {
+    padding: 0 0 0 48px;
+}
+
+.testo>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 8px;
+    max-height: 110px;
+}
+
+.testo>h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 19.5px 0 6.5px 0;
+}
+
+/* immagine */
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 48%;
+    padding: 0;
+    position: relative;
+}
+
+.tv,
+.imac {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* Card video */
+
+.tv-anima {
+    width: 384px;
+    transform: translate(-2px, -7px);
+    margin: 85px;
+}
+
+.mobile-download {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background-color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+    margin: 0 auto;
+    min-width: 15em;
+    width: 300px;
+    padding: 8px 12px;
+    height: 84px;
+    justify-content: space-between;
+    top: 250px;
+}
+
+.st-image {
+    width: auto;
+    height: 80px;
+}
+
+.st-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    height: 20px;
+}
+
+.download-text {
+    font-size: 14.4px;
+    color: #0071eb;
+    height: 19px;
+}
+
+.download-gif {
+    width: 48px;
+    height: auto;
+}
+
+.mobile-text {
+    margin: 15px;
+    flex: 1;
+    text-align: left;
+}
+
+.imac-anima {
+    width: 315px;
+    transform: translateY(-60px);
+    margin: 100px;
+}
+
+/* Media query */
+
+@media screen and (max-width:768px) {
+
+    .section {
+        text-align: center;
+    }
+
+    .testo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .order1 {
+        order: -1;
+    }
+
+    .testo h1 {
+        font-size: 40px;
+    }
+
+    .testo h2 {
+        margin: 15px 0 5px;
+        font-size: 20px;
+    }
+
+    .tv,
+    .tel,
+    .imac,
+    .kids {
+        width: 600px;
+    }
+
+    .tv-anima {
+        transform: translateY(-26px);
+        width: 440px;
+        margin: 15px 0 200px;
+    }
+
+    .mobile-download {
+        width: 358px;
+        transform: translateY(70px);
+        text-align: left;
+    }
+
+    .imac-anima {
+        transform: translateY(-180px);
+        margin-bottom: 180px;
+        width: 380px;
+    }
+
+    /* Mobile media query */
+
+    @media screen and (max-width:375px) {
+
+        .section {
+            padding: 70px 25px;
+        }
+
+        .testo h1 {
+            font-size: 26px;
+        }
+
+        .testo h2 {
+            margin: 13.5px 0 4.5px;
+            font-size: 18px;
+        }
+
+        .tv,
+        .tel,
+        .imac,
+        .kids {
+            width: 337.7px;
+        }
+
+        .tv-anima {
+            transform: translateY(-20px);
+            width: 250px;
+            margin: 15px 0 80px;
+        }
+
+        .mobile-download {
+            width: 235px;
+            height: 44px;
+            transform: translateY(-70px);
+            text-align: left;
+        }
+
+        /* img stranger things */
+
+        .st-image {
+            width: 34.28px;
+            height: 48px;
+        }
+
+        .st-text {
+            font-size: 14.4px;
+        }
+
+        .download-text {
+            font-size: 12px;
+        }
+
+        /* fine */
+
+        .imac-anima {
+            transform: translateY(-40px);
+            margin: 70px 50px;
+            width: 205px;
+            height: auto;
+        }
+
+        .order1 {
+            padding: 0;
+        }
+
+        .line-height h1 {
+            line-height: normal;
+        }
+    }
+}
+
 
  /* FINE CARDS */
 
